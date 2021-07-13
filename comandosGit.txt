@@ -1,3 +1,46 @@
-teste
+Comandos básicos de Git:
 
-Elaboração de conteúdo para fast track
+Criar repositório
+    git init
+
+Clonar repositório local
+    git clone <caminho_do_repositório>
+
+Clonar repositório remoto
+    git clone <url_do_repositório>
+
+Adicionar alteração para a staging area
+    git add <nome_do_arquivo_ou_pasta>
+
+Adicionar todas as alterações para a staging area
+    git add .
+
+Remover conteúdo da staging area
+    git rm <nome_arquivo>
+
+Confirmar alterações (salvar no repositório)
+    git commit -m "<mensagem>"
+
+Criar uma nova branch
+    git branch <nome_branch>
+
+Acessar branch
+    git checkout <nome_branch>
+
+Criar e acessar branch nova a partir da atual
+    git checkout -b <nome_nova_branch>
+
+Deletar branch local (a partir de outra branch)
+    git branch -d <nome_branch>
+
+Mesclar branch em seu HEAD atual
+    git merge <nome_branch>
+
+Combinar seu HEAD atual na sua branch
+    git rebase branch
+
+Descartar todas as alterações do HEAD
+    git reset --hard HEAD
+
+Reverter commit
+    git revert commit
